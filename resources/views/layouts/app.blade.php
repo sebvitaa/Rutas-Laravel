@@ -12,6 +12,7 @@
       <a href="{{ route('home') }}">Inicio</a>
       <a href="{{ route('login') }}">Entrar</a>
       <a href="{{ route('register') }}">Crear cuenta</a>
+      <a href="{{ route('contacto') }}">Contactanos</a>
     </div>
   </nav>
 
