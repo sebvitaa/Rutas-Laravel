@@ -9,10 +9,14 @@
 
   <nav class="bg-white shadow-sm">
     <div class="mx-auto flex max-w-2xl gap-6 px-6 py-4 font-medium">
-      <a href="{{ route('home') }}">Inicio</a>
-      <a href="{{ route('login') }}">Entrar</a>
-      <a href="{{ route('register') }}">Crear cuenta</a>
-      <a href="{{ route('contacto') }}">Contactanos</a>
+      <a href="{{ route('home') }}"
+        class="{{ request()->routeIs('home') ? 'text-indigo-600 font-semibold' : '' }}">Inicio</a>
+      <a href="{{ route('login') }}"
+        class="{{ request()->routeIs('login') ? 'text-indigo-600 font-semibold' : '' }}">Entrar</a>
+      <a href="{{ route('register') }}"
+        class="{{ request()->routeIs('register') ? 'text-indigo-600 font-semibold' : '' }}">Crear cuenta</a>
+      <a href="{{ route('contacto') }}"
+        class="{{ request()->routeIs('contacto') ? 'text-indigo-600 font-semibold' : '' }}">Contactanos</a>
     </div>
   </nav>
 
